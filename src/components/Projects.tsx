@@ -10,10 +10,10 @@ export const Projects = () => {
       id: 1,
       title: "Drooda - Rental Platform",
       description: "A comprehensive rental platform featuring user authentication, property listings, booking system, and payment integration. Built with modern full-stack architecture.",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&h=300&fit=crop",
+      image: "/lovable-uploads/b1557804-f032-4f70-9ab0-e4abc2920181.png",
       technologies: ["React.js", "Node.js", "MySQL", "AWS S3", "JWT"],
       github: "#",
-      demo: "#",
+      demo: "https://web.drooda.com",
       icon: Cloud,
       featured: true
     },
@@ -118,6 +118,7 @@ export const Projects = () => {
                     size="sm"
                     variant="outline"
                     className="flex-1 border-blue-500/50 text-blue-400 hover:bg-blue-500/20"
+                    onClick={() => window.open(project.github, '_blank')}
                   >
                     <Github className="h-4 w-4 mr-2" />
                     Code
@@ -125,6 +126,7 @@ export const Projects = () => {
                   <Button
                     size="sm"
                     className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                    onClick={() => window.open(project.demo, '_blank')}
                   >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Demo
