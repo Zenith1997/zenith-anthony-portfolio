@@ -2,7 +2,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, Database, Cloud, Cpu } from "lucide-react";
+import { Github, ExternalLink, Database, Cloud, Cpu, Settings } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
@@ -19,6 +19,17 @@ export const Projects = () => {
     },
     {
       id: 2,
+      title: "Admin Panel - Product Management",
+      description: "A comprehensive admin dashboard for product management featuring real-time analytics, inventory tracking, user management, and automated reporting with Material-UI components.",
+      image: "/lovable-uploads/92b521f9-369c-4ad8-9b2b-1d030a012418.png",
+      technologies: ["React.js", "Material-UI", "Node.js", "MySQL", "AWS S3"],
+      github: "#",
+      demo: "#",
+      icon: Settings,
+      featured: true
+    },
+    {
+      id: 3,
       title: "Influencer Management System",
       description: "Advanced campaign tracking and influencer management platform with analytics dashboard, automated reporting, and real-time collaboration tools.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
@@ -29,7 +40,7 @@ export const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: "Smart Glove - ATmega32",
       description: "IoT-based gesture recognition system for real-time sign language translation. Hardware integration with embedded programming for accessibility solutions.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
