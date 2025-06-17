@@ -21,7 +21,7 @@ export const Projects = () => {
       id: 2,
       title: "Admin Panel - Product Management",
       description: "A comprehensive admin dashboard for product management featuring real-time analytics, inventory tracking, user management, and automated reporting with Material-UI components.",
-      image: "/lovable-uploads/92b521f9-369c-4ad8-9b2b-1d030a012418.png",
+      image: "/lovable-uploads/95aee955-2dfd-46b6-851e-c44d9e8bc45f.png",
       technologies: ["React.js", "Material-UI", "Node.js", "MySQL", "AWS S3"],
       github: "#",
       demo: "#",
