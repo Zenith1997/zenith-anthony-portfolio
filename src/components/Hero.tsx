@@ -56,9 +56,11 @@ export const Hero = () => {
         {/* Avatar */}
         <div className="mb-8 relative">
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1 animate-scale-in">
-            <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center text-6xl font-bold text-white">
-              ZD
-            </div>
+            <img 
+              src="/lovable-uploads/0e47ad5a-a6d8-429d-b78b-1ce33ac1d9a7.png" 
+              alt="Zenith Dabarera"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center animate-bounce">
             <span className="text-2xl">👋</span>
