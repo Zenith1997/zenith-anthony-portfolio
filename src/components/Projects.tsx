@@ -17,7 +17,7 @@ export const Projects = () => {
       id: 1,
       title: "Drooda - Rental Platform",
       description: "A comprehensive rental platform featuring user authentication, property listings, booking system, and payment integration. Built with modern full-stack architecture.",
-      image: "/lovable-uploads/b1557804-f032-4f70-9ab0-e4abc2920181.png",
+      image: "/zenith-anthony-portfolio/lovable-uploads/b1557804-f032-4f70-9ab0-e4abc2920181.png",
       technologies: ["React.js", "Node.js", "MySQL", "AWS S3", "JWT"],
       github: "#",
       demo: "https://web.drooda.com",
@@ -29,7 +29,7 @@ export const Projects = () => {
       id: 2,
       title: "Admin Panel - Product Management",
       description: "A comprehensive admin dashboard for product management featuring real-time analytics, inventory tracking, user management, and automated reporting with Material-UI components.",
-      image: "/lovable-uploads/95aee955-2dfd-46b6-851e-c44d9e8bc45f.png",
+      image: "/zenith-anthony-portfolio/lovable-uploads/95aee955-2dfd-46b6-851e-c44d9e8bc45f.png",
       technologies: ["React.js", "Material-UI", "Node.js", "MySQL", "AWS S3"],
       github: "#",
       demo: "https://admin.drooda.com",
@@ -41,7 +41,7 @@ export const Projects = () => {
       id: 3,
       title: "Kitahara Constructions Portfolio",
       description: "Professional company portfolio website for Kitahara Constructions showcasing company profile, services, and construction projects. Built with modern web technologies for optimal performance.",
-      image: "/lovable-uploads/0caf8821-9794-4fb6-9d7d-d95551fd7135.png",
+      image: "/zenith-anthony-portfolio/lovable-uploads/0caf8821-9794-4fb6-9d7d-d95551fd7135.png",
       technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
       github: "#",
       demo: "https://zenith1997.github.io/kitahara-feature1/Kitahara-k/index.html",
@@ -120,7 +120,7 @@ export const Projects = () => {
           </p>
           
           {/* Interactive project filter */}
-          {/* <div className="flex justify-center gap-4 mb-8">
+          <div className="flex justify-center gap-4 mb-8">
             <Button variant="outline" className="group border-blue-400/50 text-blue-400 hover:bg-blue-400/20">
               <Zap className="h-4 w-4 mr-2 group-hover:animate-pulse" />
               All Projects
@@ -128,7 +128,7 @@ export const Projects = () => {
             <Button variant="outline" className="border-purple-400/50 text-purple-400 hover:bg-purple-400/20">
               Featured Only
             </Button>
-          </div> */}
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
