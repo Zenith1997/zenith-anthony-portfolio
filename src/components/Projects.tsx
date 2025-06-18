@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, Database, Cloud, Cpu, Settings } from "lucide-react";
+import { Github, ExternalLink, Database, Cloud, Cpu, Settings, Building } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
@@ -29,6 +29,17 @@ export const Projects = () => {
     },
     {
       id: 3,
+      title: "Kitahara Constructions Portfolio",
+      description: "Professional company portfolio website for Kitahara Constructions showcasing company profile, services, and construction projects. Built with modern web technologies for optimal performance.",
+      image: "/lovable-uploads/0caf8821-9794-4fb6-9d7d-d95551fd7135.png",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      github: "#",
+      demo: "https://zenith1997.github.io/kitahara-feature1/Kitahara-k/index.html",
+      icon: Building,
+      featured: true
+    },
+    {
+      id: 4,
       title: "Influencer Management System",
       description: "Advanced campaign tracking and influencer management platform with analytics dashboard, automated reporting, and real-time collaboration tools.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
@@ -39,7 +50,7 @@ export const Projects = () => {
       featured: true
     },
     {
-      id: 4,
+      id: 5,
       title: "Smart Glove - ATmega32",
       description: "IoT-based gesture recognition system for real-time sign language translation. Hardware integration with embedded programming for accessibility solutions.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
