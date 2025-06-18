@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 export const About = () => {
   const skills = {
     languages: ["JavaScript", "TypeScript", "Java", "SQL", "Python"],
-    tools: ["Git", "Postman", "IntelliJ", "Figma", "AWS"]
+    tools: ["Git", "Postman", "IntelliJ", "Figma", "AWS", "Cursor"]
   };
 
   return (

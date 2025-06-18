@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -24,7 +23,7 @@ export const Projects = () => {
       image: "/lovable-uploads/95aee955-2dfd-46b6-851e-c44d9e8bc45f.png",
       technologies: ["React.js", "Material-UI", "Node.js", "MySQL", "AWS S3"],
       github: "#",
-      demo: "#",
+      demo: "https://admin.drooda.com",
       icon: Settings,
       featured: true
     },

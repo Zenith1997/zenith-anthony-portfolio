@@ -97,6 +97,7 @@ export const Hero = () => {
             size="lg" 
             variant="outline" 
             className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-slate-900 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            onClick={() => window.open('https://github.com/Zenith1997/CV/blob/main/Zenith_CV.pdf', '_blank')}
           >
             Download Resume
             <Download className="ml-2 h-5 w-5" />

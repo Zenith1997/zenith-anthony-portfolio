@@ -77,7 +77,7 @@ export const Education = () => {
                     <ul className="space-y-2 text-gray-300">
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                        Final Year Project: Smart Glove for Sign Language Translation
+                        Final Year Project: NLP AI/ML project for sentiment analysis in TikTok
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
