@@ -114,9 +114,26 @@ export const Hero = () => {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
+    const scrollToAbout = () => {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <section ref={heroRef} className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden cursor-crosshair">
+    <section id="home" ref={heroRef} className="min-h-screen flex items-center justify-center px-4 py-4 relative overflow-hidden cursor-crosshair">
+       {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-50 backdrop-blur-md shadow-md">
+        <div className="max-w-6xl  px-4 py-6 flex justify-end items-center">
+        
+          <div className="flex gap-10">
+            <a href="#home" className="text-gray-300 hover:text-white transition">Home</a>
+            <a href="#education" className="text-gray-300 hover:text-white transition">Education</a>
+            <a href="#projects" className="text-gray-300 hover:text-white transition">Projects</a>
+            <a href="#about" className="text-gray-300 hover:text-white transition">About</a>
+            <a href="#contact" className="text-gray-300 hover:text-white transition">Contact</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Interactive Background */}
       <div className="absolute inset-0">
         {/* Floating geometric shapes */}
@@ -164,16 +181,16 @@ export const Hero = () => {
           
           {/* Floating status indicators */}
           <div className="absolute -top-2 -right-2 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center animate-bounce group-hover:animate-pulse">
-            <span className="text-2xl">👋</span>
+            <span className="text-2xl co">👋</span>
           </div>
           
           {/* Floating skill icons */}
-          <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-blue-600/80 backdrop-blur-sm rounded-full flex items-center justify-center animate-pulse hover:scale-125 transition-transform duration-300 cursor-pointer">
+        {/*   <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-blue-600/80 backdrop-blur-sm rounded-full flex items-center justify-center animate-pulse hover:scale-125 transition-transform duration-1300 cursor-pointer">
             <Code className="h-6 w-6 text-white" />
-          </div>
-          <div className="absolute top-4 -right-8 w-10 h-10 bg-purple-600/80 backdrop-blur-sm rounded-full flex items-center justify-center animate-pulse delay-500 hover:scale-125 transition-transform duration-300 cursor-pointer">
+          </div> */}
+          {/* <div className="absolute top-4 -right-8 w-10 h-10 bg-purple-600/80 backdrop-blur-sm rounded-full flex items-center justify-center animate-pulse delay-500 hover:scale-125 transition-transform duration-1300 cursor-pointer">
             <Zap className="h-5 w-5 text-white" />
-          </div>
+          </div> */}
         </div>
 
         {/* Enhanced Hero Text with gradient animation */}
@@ -217,7 +234,7 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/30 to-purple-600/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <span className="relative flex items-center">
               View Projects
-              <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-300" />
+              <ArrowDown  className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform duration-3300" />
             </span>
           </Button>
           
@@ -230,7 +247,7 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <span className="relative flex items-center">
               Download Resume
-              <Star className="ml-2 h-5 w-5 group-hover:rotate-180 transition-transform duration-500" />
+              <Star className="ml-2 h-5 w-5 group-hover:rotate-180 transition-transform duration-200" />
             </span>
           </Button>
         </div>
@@ -252,10 +269,9 @@ export const Hero = () => {
         </div>
 
         {/* Scroll Indicator with interaction */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:scale-125 transition-transform duration-300 cursor-pointer">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hover:scale-125 transition-transform duration-1300 cursor-pointer">
           <div className="flex flex-col items-center gap-2">
-            <ArrowDown className="h-6 w-6 text-gray-400" />
-            <div className="text-xs text-gray-500">Click anywhere to create magic ✨</div>
+            <ArrowDown onClick={scrollToAbout} className="h-6 w-6 text-gray-400" />
           </div>
         </div>
       </div>

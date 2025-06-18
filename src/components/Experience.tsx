@@ -43,7 +43,7 @@ export const Experience = () => {
   ];
 
   return (
-    <section className="py-20 px-4">
+    <section id="experience"  className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
           Experience

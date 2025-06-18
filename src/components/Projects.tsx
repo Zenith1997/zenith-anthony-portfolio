@@ -111,7 +111,7 @@ export const Projects = () => {
               Featured Projects
             </span>
             <div className="absolute -top-4 -right-4 animate-spin">
-              <Star className="h-8 w-8 text-yellow-400" />
+              <Star className="h-8 w-8 text-purple-400" />
             </div>
           </h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -120,7 +120,7 @@ export const Projects = () => {
           </p>
           
           {/* Interactive project filter */}
-          <div className="flex justify-center gap-4 mb-8">
+          {/* <div className="flex justify-center gap-4 mb-8">
             <Button variant="outline" className="group border-blue-400/50 text-blue-400 hover:bg-blue-400/20">
               <Zap className="h-4 w-4 mr-2 group-hover:animate-pulse" />
               All Projects
@@ -128,7 +128,7 @@ export const Projects = () => {
             <Button variant="outline" className="border-purple-400/50 text-purple-400 hover:bg-purple-400/20">
               Featured Only
             </Button>
-          </div>
+          </div> */}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
