@@ -3,13 +3,33 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 
 export const About = () => {
-  const skills = {
-    frontend: ["React.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
-    backend: ["Node.js", "Spring Boot", "Java", "Python", "RESTful APIs"],
-    database: ["MySQL", "PostgreSQL", "MongoDB", "SQL"],
-    cloud: ["AWS", "AWS S3", "EC2", "Lambda"],
-    tools: ["Git", "Postman", "IntelliJ", "Figma", "Cursor", "Docker"]
-  };
+  const skills = [
+    { name: "React.js", category: "frontend", icon: "⚛️" },
+    { name: "TypeScript", category: "frontend", icon: "📘" },
+    { name: "JavaScript", category: "frontend", icon: "🟨" },
+    { name: "HTML5", category: "frontend", icon: "🌐" },
+    { name: "CSS3", category: "frontend", icon: "🎨" },
+    { name: "Tailwind CSS", category: "frontend", icon: "💨" },
+    { name: "Node.js", category: "backend", icon: "🟢" },
+    { name: "Spring Boot", category: "backend", icon: "🍃" },
+    { name: "Java", category: "backend", icon: "☕" },
+    { name: "Python", category: "backend", icon: "🐍" },
+    { name: "RESTful APIs", category: "backend", icon: "🔗" },
+    { name: "MySQL", category: "database", icon: "🐬" },
+    { name: "PostgreSQL", category: "database", icon: "🐘" },
+    { name: "MongoDB", category: "database", icon: "🍃" },
+    { name: "SQL", category: "database", icon: "📊" },
+    { name: "AWS", category: "cloud", icon: "☁️" },
+    { name: "AWS S3", category: "cloud", icon: "📦" },
+    { name: "EC2", category: "cloud", icon: "💻" },
+    { name: "Lambda", category: "cloud", icon: "⚡" },
+    { name: "Git", category: "tools", icon: "📝" },
+    { name: "Postman", category: "tools", icon: "📮" },
+    { name: "IntelliJ", category: "tools", icon: "💡" },
+    { name: "Figma", category: "tools", icon: "🎯" },
+    { name: "Cursor", category: "tools", icon: "🖱️" },
+    { name: "Docker", category: "tools", icon: "🐳" }
+  ];
 
   return (
     <section className="py-20 px-4">
@@ -18,7 +38,7 @@ export const About = () => {
           About Me
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-12 items-start">
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           {/* Description */}
           <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -33,92 +53,46 @@ export const About = () => {
             </p>
           </Card>
 
-          {/* Skills Categories */}
-          <div className="space-y-6">
-            {/* Frontend */}
-            <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-white mb-4">Frontend Development</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.frontend.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary" 
-                    className="bg-blue-600/20 text-blue-300 border-blue-500/50 px-3 py-1 text-xs hover:bg-blue-600/30 transition-all duration-300"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+          {/* Skills Overview */}
+          <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
+            <h3 className="text-2xl font-bold text-white mb-6">Technical Expertise</h3>
+            <div className="space-y-4">
+              <div>
+                <h4 className="text-lg font-semibold text-blue-400 mb-2">Frontend Development</h4>
+                <p className="text-gray-300 text-sm">Building responsive and interactive user interfaces</p>
               </div>
-            </Card>
+              <div>
+                <h4 className="text-lg font-semibold text-green-400 mb-2">Backend Development</h4>
+                <p className="text-gray-300 text-sm">Creating robust server-side applications and APIs</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-orange-400 mb-2">Database Management</h4>
+                <p className="text-gray-300 text-sm">Designing and optimizing data storage solutions</p>
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-purple-400 mb-2">Cloud & DevOps</h4>
+                <p className="text-gray-300 text-sm">Deploying and managing applications in the cloud</p>
+              </div>
+            </div>
+          </Card>
+        </div>
 
-            {/* Backend */}
-            <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-white mb-4">Backend Development</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.backend.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary" 
-                    className="bg-green-600/20 text-green-300 border-green-500/50 px-3 py-1 text-xs hover:bg-green-600/30 transition-all duration-300"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
-
-            {/* Database */}
-            <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-white mb-4">Database & Storage</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.database.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary" 
-                    className="bg-orange-600/20 text-orange-300 border-orange-500/50 px-3 py-1 text-xs hover:bg-orange-600/30 transition-all duration-300"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
-
-            {/* Cloud & Infrastructure */}
-            <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-white mb-4">Cloud & Infrastructure</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.cloud.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary" 
-                    className="bg-purple-600/20 text-purple-300 border-purple-500/50 px-3 py-1 text-xs hover:bg-purple-600/30 transition-all duration-300"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
-
-            {/* Tools & Technologies */}
-            <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-white mb-4">Tools & Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.tools.map((skill, index) => (
-                  <Badge 
-                    key={skill} 
-                    variant="secondary" 
-                    className="bg-pink-600/20 text-pink-300 border-pink-500/50 px-3 py-1 text-xs hover:bg-pink-600/30 transition-all duration-300"
-                    style={{ animationDelay: `${index * 50}ms` }}
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </Card>
+        {/* Skills Grid */}
+        <div className="mb-8">
+          <h3 className="text-3xl font-bold text-center text-white mb-12">Technologies & Tools</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {skills.map((skill, index) => (
+              <Card 
+                key={skill.name} 
+                className="p-6 bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 flex flex-col items-center justify-center text-center group hover:scale-105"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                  {skill.icon}
+                </div>
+                <h4 className="text-white font-medium text-sm">{skill.name}</h4>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
