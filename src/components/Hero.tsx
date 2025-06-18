@@ -175,7 +175,7 @@ export const Hero = () => {
         <div className="mb-8 relative group">
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 p-1 animate-scale-in group-hover:scale-110 transition-all duration-500">
             <div className="w-full h-full rounded-full bg-gradient-to-br from-cyan-400/20 to-purple-600/20 p-1">
-             <img src="/zenith-anthony-portfolio/lovable-uploads/0e47ad5a-a6d8-429d-b78b-1ce33ac1d9a7.png"
+             <img src="/lovable-uploads/0e47ad5a-a6d8-429d-b78b-1ce33ac1d9a7.png"
                 alt="Zenith Dabarera"
                 className="w-full h-full rounded-full object-cover"/>
 
