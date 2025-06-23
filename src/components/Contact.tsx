@@ -31,13 +31,13 @@ export const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/zenith",
+      href: "https://github.com/Zenith1997",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn", 
-      href: "https://linkedin.com/in/zenith",
+      href: "https://lk.linkedin.com/in/zenithdabarera",
       color: "hover:text-blue-400"
     },
     {
